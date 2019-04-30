@@ -46,6 +46,6 @@ script:
   - g++ -std=c++14 ../src/*.cpp -o main
     #- g++ ../tests/test_main.cpp -lgtest -lpthread -o main-ut
     #- g++ -o main-ut ../tests/test_main.cpp /usr/lib/libgtest.so /usr/lib/libgtest_main.so -lgtest -lpthread  
-  - g++ -std=c++14 -o main-ut ../tests/test_main.cpp -lgtest -lpthread ../src/Printer.cpp ../src/HighestLowest.cpp ../tests/PrinterTest.cpp ../tests/HighestLowestTest.cpp
+  - g++ -std=c++14 -o main-ut ../tests/test_main.cpp -lgtest -lpthread ../src/TestClass.cpp ../tests/TestClassUnitTest.cpp 
   - ./main
   - ./main-ut
