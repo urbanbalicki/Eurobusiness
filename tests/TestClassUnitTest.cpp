@@ -1,11 +1,11 @@
 #include <gtest/gtest.h>
 #include "../inc/TestClass.hpp"
 
-struct ComposingSquaredStringTest : public ::testing::Test {
+struct TestClassUnitTest : public ::testing::Test {
   Adder AdderUnitTest;
 };
 
-TEST_F(ComposingSquaredStringTest, getResultFromCompose) {
+TEST_F(TestClassUnitTest, getResultAdd) {
   int result = AdderUnitTest.add(1, 1);
-  ASSERT_EQ(1, result);
+  ASSERT_EQ(2, result);
 }
